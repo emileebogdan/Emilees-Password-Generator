@@ -13,4 +13,4 @@ Emilee Bogdan
 -[LinkedIn](https://www.linkedin.com/in/emileebogdan/)
 
 
-<img src="images/screenshot.png">
+<img src="/images/screenshot.png">
