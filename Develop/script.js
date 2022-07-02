@@ -1,3 +1,5 @@
+// creates the character arrays
+
 var characterLength = 8;
 var choiceArray = [];
 var specCharArray = ['!','@','#','$','%','^','&','*','(',')','-','_','+','=','`','~','<','>','/','?'];
@@ -5,10 +7,13 @@ var upperCaseArray = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O
 var lowerCaseArray = ['a','b','c','d','e','f','g','h','h','j','k','i','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var numberArray = ['0','1','2','3','4','5','6','7','8','9'];
 
+// creates the generate button query 
 var generateBtn = document.querySelector("#generate");
 
+// creates the click event 
 generateBtn.addEventListener("click", writePassword);
 
+// kicks the password out
 function writePassword() {
   var correctPrompts = Prompts();
   var passwordText = document.querySelector("#password");
@@ -21,7 +26,7 @@ function writePassword() {
    }
 
 }
-
+// creates a random password
 function generatePassword() {
   var password = "";
   for(var i = 0; i < characterLength; i++) {
@@ -30,7 +35,7 @@ function generatePassword() {
   }
   return password;
 }
-
+// asks prompts for password specifications 
 function Prompts(){
   choiceArray = [];
   characterLength = parseInt(prompt("How Many Characters do you want your Password to be? (Your Password must be Between 8 and 126 Characters."));
